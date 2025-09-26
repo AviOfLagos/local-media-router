@@ -1,0 +1,56 @@
+{
+  "name": "eazyaza-platform-monorepo",
+  "version": "1.0.0",
+  "description": "Multi-tenant e-commerce platform with Medusa backend and Next.js storefront",
+  "private": true,
+  "workspaces": [
+    "eazyaza-platform",
+    "eazyaza-platform-storefront"
+  ],
+  "scripts": {
+    "dev": "node scripts/start-with-port-check.js",
+    "dev:simple": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd eazyaza-platform && npm run dev",
+    "dev:frontend": "cd eazyaza-platform-storefront && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd eazyaza-platform && npm start",
+    "start:frontend": "cd eazyaza-platform-storefront && npm start",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd eazyaza-platform && npm run build",
+    "build:frontend": "cd eazyaza-platform-storefront && npm run build",
+    "install:all": "npm install && cd eazyaza-platform && npm install && cd ../eazyaza-platform-storefront && npm install",
+    "clean": "npm run clean:backend && npm run clean:frontend",
+    "clean:backend": "cd eazyaza-platform && rm -rf node_modules && rm -rf .next",
+    "clean:frontend": "cd eazyaza-platform-storefront && rm -rf node_modules && rm -rf .next",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd eazyaza-platform && npm test",
+    "test:frontend": "cd eazyaza-platform-storefront && npm test",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd eazyaza-platform && npm run lint",
+    "lint:frontend": "cd eazyaza-platform-storefront && npm run lint",
+    "create-tenants": "cd eazyaza-platform && npx medusa exec ./src/scripts/create-demo-tenants.ts",
+    "db:migrate": "cd eazyaza-platform && npm run build",
+    "db:seed": "cd eazyaza-platform && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "ecommerce",
+    "multi-tenant",
+    "medusa",
+    "nextjs",
+    "saas",
+    "platform"
+  ],
+  "author": "EazyAza Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/eazyaza-platform.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
