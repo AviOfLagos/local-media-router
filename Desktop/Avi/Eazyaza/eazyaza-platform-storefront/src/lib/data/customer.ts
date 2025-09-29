@@ -15,6 +15,64 @@ import {
   setAuthToken,
 } from "./cookies"
 
+export const checkEmailExists = async (email: string): Promise<boolean> => {
+  try {
+    const publishableKey = process.env.NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
+    const response = await fetch(`${process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL}/store/customers/check-email`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(publishableKey && { 'x-publishable-api-key': publishableKey }),
+      },
+      body: JSON.stringify({ email }),
+    })
+
+    if (response.ok) {
+      const data = await response.json()
+      return data.exists || false
+    }
+
+    // If the endpoint doesn't exist, fall back to trying to register
+    // which will fail if the email exists (handled in signup function)
+    return false
+  } catch (error) {
+    console.warn('Email check failed, proceeding with registration:', error)
+    return false
+  }
+}
+
+export const generateOtp = async (email: string) => {
+  try {
+    // Check if email already exists before generating OTP
+    const emailExists = await checkEmailExists(email)
+    if (emailExists) {
+      throw new Error('An account with this email already exists. Please sign in instead.')
+    }
+
+    const backendUrl = process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL || 'http://localhost:9000'
+    const publishableKey = process.env.NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
+    console.log('Backend URL:', backendUrl)
+
+    const response = await fetch(`${backendUrl}/store/otp/generate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(publishableKey && { 'x-publishable-api-key': publishableKey }),
+      },
+      body: JSON.stringify({ email }),
+    })
+
+    if (!response.ok) {
+      const errorData = await response.json()
+      throw new Error(errorData.error || 'Failed to generate OTP')
+    }
+
+    return await response.json()
+  } catch (error: any) {
+    throw new Error(error.message || 'Failed to generate OTP')
+  }
+}
+
 export const retrieveCustomer =
   async (): Promise<HttpTypes.StoreCustomer | null> => {
     const authHeaders = await getAuthHeaders()
@@ -61,14 +119,50 @@ export const updateCustomer = async (body: HttpTypes.StoreUpdateCustomer) => {
 
 export async function signup(_currentState: unknown, formData: FormData) {
   const password = formData.get("password") as string
-  const customerForm = {
-    email: formData.get("email") as string,
-    first_name: formData.get("first_name") as string,
-    last_name: formData.get("last_name") as string,
-    phone: formData.get("phone") as string,
-  }
+  const userType = formData.get("user_type") as string
+  const storeName = formData.get("store_name") as string
+  const otp = formData.get("otp") as string
+
+  // Simplified forms based on user type (per marketplace_user_flow.md)
+  const customerForm = userType === "store-owner"
+    ? {
+        // Store owners: simplified to email only, will auto-generate name from store
+        email: formData.get("email") as string,
+        first_name: storeName?.split(' ')[0] || 'Store',
+        last_name: storeName?.split(' ').slice(1).join(' ') || 'Owner',
+        phone: '', // Optional for store owners initially
+      }
+    : {
+        // Shoppers: full details
+        email: formData.get("email") as string,
+        first_name: formData.get("first_name") as string,
+        last_name: formData.get("last_name") as string,
+        phone: formData.get("phone") as string,
+      }
 
   try {
+    // For store owners, verify OTP before proceeding
+    if (userType === "store-owner" && otp) {
+      const publishableKey = process.env.NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
+      const otpResponse = await fetch(`${process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL}/store/otp/verify`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(publishableKey && { 'x-publishable-api-key': publishableKey }),
+        },
+        body: JSON.stringify({
+          email: customerForm.email,
+          otp: otp,
+        }),
+      })
+
+      if (!otpResponse.ok) {
+        const errorData = await otpResponse.json()
+        return errorData.error || "OTP verification failed"
+      }
+    }
+
+    // Register the user with Medusa auth
     const token = await sdk.auth.register("customer", "emailpass", {
       email: customerForm.email,
       password: password,
@@ -80,12 +174,66 @@ export async function signup(_currentState: unknown, formData: FormData) {
       ...(await getAuthHeaders()),
     }
 
+    // Create customer profile
     const { customer: createdCustomer } = await sdk.store.customer.create(
       customerForm,
       {},
       headers
     )
 
+    // If this is a store owner, create their tenant store
+    if (userType === "store-owner" && storeName) {
+      try {
+        // Create a slug from store name
+        const subdomain = storeName
+          .toLowerCase()
+          .replace(/[^a-z0-9\s-]/g, '')
+          .replace(/\s+/g, '-')
+          .replace(/-+/g, '-')
+          .replace(/^-|-$/g, '')
+          .substring(0, 50)
+
+        // Call our tenant creation API (we'll create this)
+        const tenantResponse = await fetch(`${process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL}/store/tenants`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...headers,
+          },
+          body: JSON.stringify({
+            subdomain: subdomain,
+            name: storeName,
+            owner_email: customerForm.email,
+            owner_id: createdCustomer.id,
+            description: `${storeName} - Powered by EazyAza`,
+            theme_config: {
+              primaryColor: '#3B82F6',
+              secondaryColor: '#1F2937',
+              fontFamily: 'Inter',
+              logoPosition: 'left'
+            },
+            default_currency: 'USD',
+            supported_regions: ['us'],
+            ai_config: {
+              brandVoice: 'professional',
+              industry: 'general',
+              contentTone: 'friendly'
+            }
+          })
+        })
+
+        if (tenantResponse.ok) {
+          console.log(`Created tenant store: ${subdomain}`)
+        } else {
+          console.warn(`Failed to create tenant store: ${tenantResponse.status}`)
+        }
+      } catch (tenantError) {
+        console.warn('Failed to create tenant store:', tenantError)
+        // Don't fail the whole signup process if tenant creation fails
+      }
+    }
+
+    // Login the user
     const loginToken = await sdk.auth.login("customer", "emailpass", {
       email: customerForm.email,
       password,
@@ -98,7 +246,14 @@ export async function signup(_currentState: unknown, formData: FormData) {
 
     await transferCart()
 
-    return createdCustomer
+    // For store owners, redirect to their dashboard after successful registration
+    if (userType === "store-owner") {
+      // Store owner registered successfully, redirect to store owner dashboard
+      return { success: true, redirectTo: '/store-owner-dashboard', customer: createdCustomer }
+    }
+
+    // For shoppers, redirect to their dashboard
+    return { success: true, redirectTo: '/shopper-dashboard', customer: createdCustomer }
   } catch (error: any) {
     return error.toString()
   }
@@ -124,6 +279,45 @@ export async function login(_currentState: unknown, formData: FormData) {
     await transferCart()
   } catch (error: any) {
     return error.toString()
+  }
+
+  // After successful login, determine user type and redirect appropriately
+  try {
+    const customer = await retrieveCustomer()
+    if (customer) {
+      // TODO: Once we have tenant system, determine if user is store owner
+      // For now, we'll use a simple heuristic or default behavior
+
+      // Check if user has any stores (indicates store owner)
+      // This is a temporary solution until proper tenant relationships are implemented
+      const backendUrl = process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL || 'http://localhost:9000'
+      const publishableKey = process.env.NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
+
+      try {
+        const storeCheckResponse = await fetch(`${backendUrl}/store/user-stores`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(publishableKey && { 'x-publishable-api-key': publishableKey }),
+          },
+          body: JSON.stringify({ email: customer.email }),
+        })
+
+        if (storeCheckResponse.ok) {
+          const storeData = await storeCheckResponse.json()
+          if (storeData.isStoreOwner) {
+            return { success: true, redirectTo: '/store-owner-dashboard', customer }
+          }
+        }
+      } catch (error) {
+        console.warn('Store owner check failed, defaulting to shopper dashboard')
+      }
+
+      // Default to shopper dashboard
+      return { success: true, redirectTo: '/shopper-dashboard', customer }
+    }
+  } catch (error) {
+    console.warn('Customer retrieval failed after login:', error)
   }
 }
 

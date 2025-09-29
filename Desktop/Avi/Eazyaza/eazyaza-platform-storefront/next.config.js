@@ -7,6 +7,11 @@ checkEnvVariables()
  */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    // Explicitly set the workspace root to silence the warning
+    // about multiple lockfiles in the monorepo
+    externalDir: true,
+  },
   logging: {
     fetches: {
       fullUrl: true,

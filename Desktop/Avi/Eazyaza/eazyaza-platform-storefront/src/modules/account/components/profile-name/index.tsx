@@ -19,9 +19,22 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
     _currentState: Record<string, unknown>,
     formData: FormData
   ) => {
+    const firstName = formData.get("first_name") as string
+    const lastName = formData.get("last_name") as string
+
+    // Validate required fields
+    if (!firstName || !lastName) {
+      return { success: false, error: "Both first name and last name are required" }
+    }
+
+    // Validate name format (only letters, spaces, hyphens, apostrophes)
+    if (!/^[a-zA-Z\s\-']+$/.test(firstName) || !/^[a-zA-Z\s\-']+$/.test(lastName)) {
+      return { success: false, error: "Names can only contain letters, spaces, hyphens, and apostrophes" }
+    }
+
     const customer = {
-      first_name: formData.get("first_name") as string,
-      last_name: formData.get("last_name") as string,
+      first_name: firstName.trim(),
+      last_name: lastName.trim(),
     }
 
     try {

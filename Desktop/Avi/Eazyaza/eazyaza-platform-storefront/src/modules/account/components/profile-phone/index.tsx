@@ -12,15 +12,22 @@ type MyInformationProps = {
   customer: HttpTypes.StoreCustomer
 }
 
-const ProfileEmail: React.FC<MyInformationProps> = ({ customer }) => {
+const ProfilePhone: React.FC<MyInformationProps> = ({ customer }) => {
   const [successState, setSuccessState] = React.useState(false)
 
   const updateCustomerPhone = async (
     _currentState: Record<string, unknown>,
     formData: FormData
   ) => {
+    const phone = formData.get("phone") as string
+
+    // Validate phone number format
+    if (phone && !/^[+]?[0-9\s\-\(\)]{7,15}$/.test(phone.replace(/\s/g, ''))) {
+      return { success: false, error: "Please enter a valid phone number" }
+    }
+
     const customer = {
-      phone: formData.get("phone") as string,
+      phone: phone,
     }
 
     try {
@@ -59,8 +66,8 @@ const ProfileEmail: React.FC<MyInformationProps> = ({ customer }) => {
           <Input
             label="Phone"
             name="phone"
-            type="phone"
-            autoComplete="phone"
+            type="tel"
+            autoComplete="tel"
             required
             defaultValue={customer.phone ?? ""}
             data-testid="phone-input"
@@ -71,4 +78,4 @@ const ProfileEmail: React.FC<MyInformationProps> = ({ customer }) => {
   )
 }
 
-export default ProfileEmail
+export default ProfilePhone

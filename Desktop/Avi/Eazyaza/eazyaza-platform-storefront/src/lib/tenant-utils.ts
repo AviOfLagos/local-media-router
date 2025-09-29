@@ -71,8 +71,8 @@ export async function getTenantData(subdomain: string): Promise<TenantData | nul
   }
 
   try {
-    // Fetch from our Medusa backend
-    const response = await fetch(`${BACKEND_URL}/admin/tenants/${subdomain}`, {
+    // Fetch from our Medusa backend store API
+    const response = await fetch(`${BACKEND_URL}/store/tenants/${subdomain}`, {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -90,7 +90,8 @@ export async function getTenantData(subdomain: string): Promise<TenantData | nul
       throw new Error(`Failed to fetch tenant: ${response.status}`);
     }
 
-    const tenantData = await response.json();
+    const responseData = await response.json();
+    const tenantData = responseData.tenant;
 
     // Cache the result
     tenantCache.set(subdomain, {
@@ -109,7 +110,8 @@ export async function getTenantData(subdomain: string): Promise<TenantData | nul
       return cached.data;
     }
 
-    return null;
+    // Fallback to demo tenant for development
+    return createFallbackTenant(subdomain);
   }
 }
 

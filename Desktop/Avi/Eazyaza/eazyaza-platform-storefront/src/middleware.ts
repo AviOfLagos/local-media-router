@@ -173,7 +173,20 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  // Handle main domain (non-subdomain) requests - existing Medusa logic
+  // Handle main domain (non-subdomain) requests
+
+  // Skip middleware for static assets
+  if (pathname.includes(".")) {
+    return NextResponse.next()
+  }
+
+  // Allow main landing page and platform routes to be served directly
+  const platformRoutes = ['/', '/marketplace', '/about', '/contact', '/help', '/docs', '/status', '/terms', '/privacy', '/careers']
+  if (platformRoutes.includes(pathname) || pathname.startsWith('/marketplace/')) {
+    return NextResponse.next()
+  }
+
+  // For all other routes, apply region-based routing (existing Medusa logic)
   let cacheIdCookie = request.cookies.get("_medusa_cache_id")
   let cacheId = cacheIdCookie?.value || crypto.randomUUID()
 
@@ -183,7 +196,7 @@ export async function middleware(request: NextRequest) {
   const urlHasCountryCode =
     countryCode && request.nextUrl.pathname.split("/")[1].includes(countryCode)
 
-  // Existing Medusa region logic
+  // Existing Medusa region logic for non-platform routes
   if (urlHasCountryCode && cacheIdCookie) {
     return NextResponse.next()
   }
@@ -196,15 +209,10 @@ export async function middleware(request: NextRequest) {
     return response
   }
 
-  // Skip middleware for static assets
-  if (pathname.includes(".")) {
-    return NextResponse.next()
-  }
-
   const redirectPath = pathname === "/" ? "" : pathname
   const queryString = request.nextUrl.search ? request.nextUrl.search : ""
 
-  // Redirect to appropriate region
+  // Redirect to appropriate region for e-commerce routes
   if (!urlHasCountryCode && countryCode) {
     const redirectUrl = `${request.nextUrl.origin}/${countryCode}${redirectPath}${queryString}`
     return NextResponse.redirect(redirectUrl, 307)

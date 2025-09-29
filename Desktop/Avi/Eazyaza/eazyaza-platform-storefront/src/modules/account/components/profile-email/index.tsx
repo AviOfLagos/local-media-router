@@ -6,7 +6,7 @@ import Input from "@modules/common/components/input"
 
 import AccountInfo from "../account-info"
 import { HttpTypes } from "@medusajs/types"
-// import { updateCustomer } from "@lib/data/customer"
+import { updateCustomer } from "@lib/data/customer"
 
 type MyInformationProps = {
   customer: HttpTypes.StoreCustomer
@@ -15,17 +15,23 @@ type MyInformationProps = {
 const ProfileEmail: React.FC<MyInformationProps> = ({ customer }) => {
   const [successState, setSuccessState] = React.useState(false)
 
-  // TODO: It seems we don't support updating emails now?
-  const updateCustomerEmail = (
+  const updateCustomerEmail = async (
     _currentState: Record<string, unknown>,
     formData: FormData
   ) => {
+    const email = formData.get("email") as string
+
+    // Validate email format
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return { success: false, error: "Please enter a valid email address" }
+    }
+
     const customer = {
-      email: formData.get("email") as string,
+      email: email,
     }
 
     try {
-      // await updateCustomer(customer)
+      await updateCustomer(customer)
       return { success: true, error: null }
     } catch (error: any) {
       return { success: false, error: error.toString() }
