@@ -1,0 +1,30 @@
+# Media files (downloaded by yt-dlp)
+*.mp4
+*.mp3
+*.wav
+*.webm
+*.m4a
+*.ogg
+*.flac
+
+# Subtitle files (raw, before processing)
+*.srt
+*.vtt
+*.ass
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
