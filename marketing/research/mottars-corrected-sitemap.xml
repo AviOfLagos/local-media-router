@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ============================================ -->
+  <!-- STATIC PAGES                                 -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://mottars.com</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/rentals</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <!-- NOTE: /login and /register REMOVED — authentication pages should not be indexed -->
+  <!-- Add <meta name="robots" content="noindex, nofollow"> to both pages -->
+
+  <url>
+    <loc>https://mottars.com/privacy</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/terms</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- BLOG PAGES (NEWLY ADDED — were missing)      -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://mottars.com/blog</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/best-cars-for-nigerian-roads-top-reliable-vehicles-in-2025</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/buying-cars-in-nigeria-everything-you-need-to-know-in-2025</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/car-inspection-checklist-what-to-check-before-buying-any-vehicle</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/complete-car-buying-guide-what-to-look-for-when-buying-a-used-car-in-nigeria</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/how-to-sign-up-on-mottars-complete-step-by-step-guide</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/how-to-upload-your-first-car-listing-on-mottars</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/understanding-mottars-features-messaging-offers-and-more</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/blog/used-cars-for-sale-in-nigeria-how-to-find-quality-vehicles-at-great-prices</loc>
+    <lastmod>2026-03-05</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- CAR LISTINGS (test/junk entries removed)     -->
+  <!-- REMOVED: libero-id-eligendi (faker data)     -->
+  <!-- REMOVED: nskznjkj-kscjz (keyboard mash)     -->
+  <!-- REMOVED: tesla-tesla (malformed slug)        -->
+  <!-- REMOVED: nissan-chevrolet (brand mismatch)   -->
+  <!-- REMOVED: suv-honda (body type as brand)      -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://mottars.com/cars/toyota-camry-2025-1</loc>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/9f65464a-4377-4c48-9ecc-389d7789e5e2.png</image:loc>
+    </image:image>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/toyota-camry-2024</loc>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/9bc4518a-5577-4c7a-897c-4f307b7e13bb.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/33225133-fd73-4cf7-ad5b-d6330a87926e.webp</image:loc>
+    </image:image>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/lamborghini-urus-2025</loc>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/407440e1-f502-4b60-904a-223386ce70b7.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/e65271b6-d2ef-412d-b531-20bf47dbd058.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/877db59a-581b-40f9-a71c-2b3e609f1c95.jpeg</image:loc>
+    </image:image>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/toyota-venza-2025</loc>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/c73bc744-049c-439a-858f-961fea1b5167.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/32bf6793-8a42-4d83-b45e-1d5def023077.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/bc4272a9-1967-486a-a986-d82bdea345ad.jpeg</image:loc>
+    </image:image>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/toyota-rava-4-2023</loc>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/5c7c32a3-d0d7-4e2f-91a3-5f3c2dfab9b4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/231d214e-443c-4c41-9906-3648d42e3767.jpg</image:loc>
+    </image:image>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/toyota-camry-2026</loc>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/49d02dcc-4afe-4e7a-8322-e01a0eae4790.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/740827a0-7683-4a03-be4e-98e12d492b54.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/12708e2b-1285-4f4a-830e-2ab3c8ddf11f.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/f9ec91d1-0d1f-4224-9f95-56dedc3eaaa2.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/bc350c92-be7d-4d53-92ab-a39533b4e836.jpeg</image:loc>
+    </image:image>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/toyota-corolla-2020</loc>
+    <image:image>
+      <image:loc>https://mottars-media.s3.af-south-1.amazonaws.com/cars/744a22eb-47e9-40e6-b2a2-7e3720f1d77c.png</image:loc>
+    </image:image>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/honda-accord-2025</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1621979787123-daf3ba3187e2?q=80&amp;w=1227&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1596123671126-0173cacc37d9?q=80&amp;w=1635&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1708226633190-d5b9fe523b24?q=80&amp;w=4033&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/cadillac-ct5-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/genesis-g80-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/infiniti-q50-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/acura-tlx-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/kia-stinger-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/hyundai-sonata-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/subaru-outback-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/volkswagen-passat-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/mazda-cx-5-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/nissan-altima-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/lexus-es-350-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/porsche-911-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/chevrolet-corvette-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1617788138017-80ad40651399?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/ford-mustang-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/audi-a4-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/tesla-model-3-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/mercedes-c-class-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/bmw-3-series-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/honda-accord-2022</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/cars/toyota-camry-2023</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=1200&amp;h=800&amp;fit=crop&amp;auto=format</image:loc>
+    </image:image>
+    <lastmod>2025-12-08</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- PARTNER PAGES                                -->
+  <!-- NOTE: 30 "auto-repair-N" pages retained but  -->
+  <!-- flagged for manual review. If these are test  -->
+  <!-- data, remove them entirely.                   -->
+  <!-- NOTE: 2 UUID-based URLs retained but should   -->
+  <!-- be migrated to human-readable slugs.          -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://mottars.com/partners/aa30c219-6e72-4d2e-8b72-358428e7b644</loc>
+    <!-- TODO: Migrate to human-readable slug with 301 redirect -->
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/mikes-auto-workshop</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/ramp-auto-works</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <!-- AUTO-REPAIR PAGES: Review for unique content. Remove if test data. -->
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-30-1772373637087</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-29-1772373636362</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-28-1772373635646</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-27-1772373634925</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-26-1772373634201</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-25-1772373633480</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-24-1772373632739</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-23-1772373632007</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-22-1772373631290</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-21-1772373630573</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-20-1772373629852</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-19-1772373629127</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-18-1772373628407</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-17-1772373627683</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-16-1772373626965</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-15-1772373626250</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-14-1772373625355</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-13-1772373624634</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-12-1772373623912</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-11-1772373623194</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-10-1772373622477</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-9-1772373621758</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-8-1772373621045</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-7-1772373620326</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-6-1772373619603</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-5-1772373618878</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-4-1772373617988</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-3-1772373617256</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-2-1772373616537</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/auto-repair-1-1772373614910</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/d0a8a462-2375-4aa4-8bae-fe03cd83d486</loc>
+    <!-- TODO: Migrate to human-readable slug with 301 redirect -->
+    <lastmod>2026-02-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/nexus-motors</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/pinnacle-car-sales</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/summit-auto-group</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/apex-motors</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/velocity-car-sales</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/crown-auto-services</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/horizon-motors</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/stellar-car-deals</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/green-light-auto</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/fast-track-motors</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/luxury-car-gallery</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/capital-auto-sales</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/prime-motors</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/royal-vehicle-services</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/metro-auto-hub</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/coastal-cars</loc>
+    <lastmod>2025-12-03</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/city-motors</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/elite-car-sales</loc>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/premium-auto-dealer</loc>
+    <lastmod>2025-12-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://mottars.com/partners/jims-and-co</loc>
+    <lastmod>2025-12-09</lastmod>
+  </url>
+
+</urlset>

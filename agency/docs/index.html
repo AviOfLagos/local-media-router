@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mottars Marketing Agency &mdash; System Documentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Mobile hamburger -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+
+  <!-- Overlay for mobile nav -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-mark">M</div>
+      <div class="brand-text">
+        <span class="brand-name">Mottars</span>
+        <span class="brand-label">Marketing Agency</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section-title">Documentation</div>
+      <a href="#overview" class="nav-link active">
+        <span class="nav-icon">&#9673;</span> Overview
+      </a>
+      <a href="#agents" class="nav-link">
+        <span class="nav-icon">&#9775;</span> Agent Roster
+      </a>
+      <a href="#commands" class="nav-link">
+        <span class="nav-icon">&#9002;</span> Commands
+      </a>
+      <a href="#how-it-works" class="nav-link">
+        <span class="nav-icon">&#9881;</span> How It Works
+      </a>
+      <a href="#file-structure" class="nav-link">
+        <span class="nav-icon">&#9783;</span> File Structure
+      </a>
+
+      <div class="nav-section-title">Resources</div>
+      <a href="#tools" class="nav-link">
+        <span class="nav-icon">&#9874;</span> Free Tools
+      </a>
+      <a href="#campaign" class="nav-link">
+        <span class="nav-icon">&#9733;</span> Current Campaign
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="version">
+        <span class="status-dot"></span>
+        System Online &mdash; v1.0
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="content">
+
+      <!-- Hero -->
+      <section class="hero" id="overview">
+        <div class="hero-eyebrow">Virtual Marketing Agency</div>
+        <h1>
+          6 AI Agents.<br>
+          One <span class="accent">Mission</span>.<br>
+          Dominate Nigeria's Auto Market.
+        </h1>
+        <p>
+          A fully autonomous marketing department for mottars.com, built on Claude Code.
+          Six persistent AI agents with unique identities, dedicated memory banks, and coordinated task
+          queues &mdash; operating as a real agency without the overhead.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value">6</span>
+            <span class="stat-label">AI Agents</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">11</span>
+            <span class="stat-label">Commands</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">12+</span>
+            <span class="stat-label">Marketing Skills</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">$0</span>
+            <span class="stat-label">Tool Costs</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Agent Roster -->
+      <section class="section" id="agents">
+        <div class="section-header">
+          <h2>Agent Roster</h2>
+          <p>Each agent has a persistent identity, personality, memory, and specific deliverables. They collaborate through the content waterfall and task board.</p>
+        </div>
+
+        <div class="agent-grid">
+
+          <!-- Tunde -->
+          <div class="agent-card" data-agent="tunde">
+            <div class="agent-header">
+              <div class="agent-avatar">T</div>
+              <div class="agent-info">
+                <div class="agent-name">Tunde</div>
+                <div class="agent-role">Content Writer</div>
+              </div>
+              <span class="badge badge-idle">Idle</span>
+            </div>
+            <div class="agent-personality">
+              Meticulous storyteller. Blends Nigerian automotive culture with SEO-driven structure. Thinks in headlines and hooks.
+            </div>
+            <div class="agent-section-label">Core Skills</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Blog Posts</span>
+              <span class="skill-tag">Landing Pages</span>
+              <span class="skill-tag">Buyer Guides</span>
+              <span class="skill-tag">Copywriting</span>
+            </div>
+            <div class="agent-section-label">Deliverables</div>
+            <ul class="deliverables-list">
+              <li>3 SEO blog posts per week</li>
+              <li>Landing page copy for campaigns</li>
+              <li>Buyer guides &amp; comparison content</li>
+              <li>Email newsletter copy</li>
+            </ul>
+          </div>
+
+          <!-- Amara -->
+          <div class="agent-card" data-agent="amara">
+            <div class="agent-header">
+              <div class="agent-avatar">A</div>
+              <div class="agent-info">
+                <div class="agent-name">Amara</div>
+                <div class="agent-role">Social Media Manager</div>
+              </div>
+              <span class="badge badge-idle">Idle</span>
+            </div>
+            <div class="agent-personality">
+              Culturally fluent and trend-savvy. Speaks Lagos and Abuja. Knows when to drop pidgin and when to keep it corporate.
+            </div>
+            <div class="agent-section-label">Core Skills</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Social Content</span>
+              <span class="skill-tag">Community</span>
+              <span class="skill-tag">Scheduling</span>
+              <span class="skill-tag">Engagement</span>
+            </div>
+            <div class="agent-section-label">Deliverables</div>
+            <ul class="deliverables-list">
+              <li>Daily social posts (IG, X, TikTok)</li>
+              <li>Content calendar management</li>
+              <li>Community engagement playbook</li>
+              <li>Weekly performance reports</li>
+            </ul>
+          </div>
+
+          <!-- Chidi -->
+          <div class="agent-card" data-agent="chidi">
+            <div class="agent-header">
+              <div class="agent-avatar">C</div>
+              <div class="agent-info">
+                <div class="agent-name">Chidi</div>
+                <div class="agent-role">SEO Specialist</div>
+              </div>
+              <span class="badge badge-idle">Idle</span>
+            </div>
+            <div class="agent-personality">
+              Data-obsessed optimizer. Lives in search console and thinks in keyword clusters. Patient, methodical, always testing.
+            </div>
+            <div class="agent-section-label">Core Skills</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Technical SEO</span>
+              <span class="skill-tag">Keywords</span>
+              <span class="skill-tag">Schema</span>
+              <span class="skill-tag">Link Building</span>
+            </div>
+            <div class="agent-section-label">Deliverables</div>
+            <ul class="deliverables-list">
+              <li>Weekly keyword research briefs</li>
+              <li>Technical SEO audits &amp; fixes</li>
+              <li>Schema markup implementation</li>
+              <li>Monthly ranking reports</li>
+            </ul>
+          </div>
+
+          <!-- Kemi -->
+          <div class="agent-card" data-agent="kemi">
+            <div class="agent-header">
+              <div class="agent-avatar">K</div>
+              <div class="agent-info">
+                <div class="agent-name">Kemi</div>
+                <div class="agent-role">Growth Strategist</div>
+              </div>
+              <span class="badge badge-idle">Idle</span>
+            </div>
+            <div class="agent-personality">
+              Numbers-driven growth hacker. Connects every action to a metric. Relentlessly focused on acquisition funnels and conversion.
+            </div>
+            <div class="agent-section-label">Core Skills</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Funnels</span>
+              <span class="skill-tag">Analytics</span>
+              <span class="skill-tag">Email Sequences</span>
+              <span class="skill-tag">Conversion</span>
+            </div>
+            <div class="agent-section-label">Deliverables</div>
+            <ul class="deliverables-list">
+              <li>Growth experiment pipeline</li>
+              <li>Email nurture sequences (Brevo)</li>
+              <li>Funnel analysis &amp; optimization</li>
+              <li>Weekly growth metrics dashboard</li>
+            </ul>
+          </div>
+
+          <!-- Dayo -->
+          <div class="agent-card" data-agent="dayo">
+            <div class="agent-header">
+              <div class="agent-avatar">D</div>
+              <div class="agent-info">
+                <div class="agent-name">Dayo</div>
+                <div class="agent-role">Creative Director</div>
+              </div>
+              <span class="badge badge-idle">Idle</span>
+            </div>
+            <div class="agent-personality">
+              Visual thinker and brand guardian. Sets the tone, approves the look, and makes sure everything feels like Mottars.
+            </div>
+            <div class="agent-section-label">Core Skills</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Brand Design</span>
+              <span class="skill-tag">Visual Strategy</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Ad Creative</span>
+            </div>
+            <div class="agent-section-label">Deliverables</div>
+            <ul class="deliverables-list">
+              <li>Brand asset creation (Canva)</li>
+              <li>Social media visual templates</li>
+              <li>Ad creative for campaigns</li>
+              <li>Style guide enforcement</li>
+            </ul>
+          </div>
+
+          <!-- Ife -->
+          <div class="agent-card" data-agent="ife">
+            <div class="agent-header">
+              <div class="agent-avatar">I</div>
+              <div class="agent-info">
+                <div class="agent-name">Ife</div>
+                <div class="agent-role">Research Analyst</div>
+              </div>
+              <span class="badge badge-idle">Idle</span>
+            </div>
+            <div class="agent-personality">
+              Curiosity-driven investigator. Digs into competitor moves, market trends, and consumer behavior. Feeds intelligence to every other agent.
+            </div>
+            <div class="agent-section-label">Core Skills</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Market Research</span>
+              <span class="skill-tag">Competitor Intel</span>
+              <span class="skill-tag">Trend Analysis</span>
+              <span class="skill-tag">Data Mining</span>
+            </div>
+            <div class="agent-section-label">Deliverables</div>
+            <ul class="deliverables-list">
+              <li>Weekly competitor analysis</li>
+              <li>Nigerian car buyer research</li>
+              <li>Content gap identification</li>
+              <li>Monthly market trend reports</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Commands -->
+      <section class="section" id="commands">
+        <div class="section-header">
+          <h2>Slash Commands</h2>
+          <p>11 commands to orchestrate the agency. Run them in Claude Code to manage agents, tasks, and campaigns.</p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="command-table">
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th class="hide-mobile">Category</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="command-name">/heartbeat</span></td>
+                <td class="command-desc">Pulse-check all agents &mdash; loads memory, checks queues, reports status</td>
+                <td class="hide-mobile"><span class="command-category">Agency</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/board</span></td>
+                <td class="command-desc">View the task board &mdash; all tasks across agents with status and priority</td>
+                <td class="hide-mobile"><span class="command-category">Agency</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/assign</span></td>
+                <td class="command-desc">Assign a new task to a specific agent with priority and deadline</td>
+                <td class="hide-mobile"><span class="command-category">Agency</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/standup</span></td>
+                <td class="command-desc">Run a team standup &mdash; each agent reports what they did, blockers, next steps</td>
+                <td class="hide-mobile"><span class="command-category">Agency</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/sprint</span></td>
+                <td class="command-desc">Start a focused sprint &mdash; activate agents sequentially on priority tasks</td>
+                <td class="hide-mobile"><span class="command-category">Agency</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/activate</span></td>
+                <td class="command-desc">Activate a specific agent to work on their current task queue</td>
+                <td class="hide-mobile"><span class="command-category">Agency</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/agency-status</span></td>
+                <td class="command-desc">Full agency dashboard &mdash; agents, tasks, campaign progress, metrics</td>
+                <td class="hide-mobile"><span class="command-category">Agency</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/process-video</span></td>
+                <td class="command-desc">Extract transcript from YouTube, Instagram, or any supported video URL</td>
+                <td class="hide-mobile"><span class="command-category">Research</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/save-strategy</span></td>
+                <td class="command-desc">Extract and categorize marketing strategies from a processed transcript</td>
+                <td class="hide-mobile"><span class="command-category">Research</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/list-strategies</span></td>
+                <td class="command-desc">Browse saved marketing strategies by category, keyword, or date</td>
+                <td class="hide-mobile"><span class="command-category">Research</span></td>
+              </tr>
+              <tr>
+                <td><span class="command-name">/mottars-status</span></td>
+                <td class="command-desc">Quick workspace overview &mdash; transcripts, strategies, recent activity</td>
+                <td class="hide-mobile"><span class="command-category">Workspace</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="section" id="how-it-works">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <p>The agency operates through three core systems: agent activation, the heartbeat loop, and the content waterfall.</p>
+        </div>
+
+        <h3>Agent Activation Flow</h3>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <h4>1. Heartbeat Check</h4>
+            <p>The system loads each agent's memory file, reviews their task queue, and reports current status (IDLE, ACTIVE, or BUSY). This is the agency's pulse.</p>
+          </div>
+          <div class="workflow-step">
+            <h4>2. Task Assignment</h4>
+            <p>Tasks are created via <code>/assign</code> or during sprints. Each task gets a priority (P0-P3), a deadline, and is routed to the appropriate agent based on their skills.</p>
+          </div>
+          <div class="workflow-step">
+            <h4>3. Agent Activation</h4>
+            <p>When activated via <code>/activate</code> or <code>/sprint</code>, an agent loads its personality, memory, and context. It then executes tasks using its registered skills and tools.</p>
+          </div>
+          <div class="workflow-step">
+            <h4>4. Output &amp; Handoff</h4>
+            <p>Completed work is saved to the appropriate directory. If the task is part of the content waterfall, the output is handed to the next agent in the chain automatically.</p>
+          </div>
+          <div class="workflow-step">
+            <h4>5. Memory Update</h4>
+            <p>After execution, the agent's memory is updated with what was done, decisions made, and any blockers encountered. This persists across sessions.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 40px;">Content Waterfall</h3>
+        <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 16px;">Every piece of content flows through this chain. Each agent adds their expertise before passing it forward.</p>
+
+        <div class="flow-container">
+          <div class="flow-steps">
+            <div class="flow-step" data-agent="ife">
+              <div class="step-icon">I</div>
+              <span>Ife<br><small style="color: var(--text-muted); font-weight: 400;">Research</small></span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step" data-agent="dayo">
+              <div class="step-icon">D</div>
+              <span>Dayo<br><small style="color: var(--text-muted); font-weight: 400;">Creative Brief</small></span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step" data-agent="tunde">
+              <div class="step-icon">T</div>
+              <span>Tunde<br><small style="color: var(--text-muted); font-weight: 400;">Write</small></span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step" data-agent="chidi">
+              <div class="step-icon">C</div>
+              <span>Chidi<br><small style="color: var(--text-muted); font-weight: 400;">SEO Optimize</small></span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step" data-agent="amara">
+              <div class="step-icon">A</div>
+              <span>Amara<br><small style="color: var(--text-muted); font-weight: 400;">Distribute</small></span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step" data-agent="kemi">
+              <div class="step-icon">K</div>
+              <span>Kemi<br><small style="color: var(--text-muted); font-weight: 400;">Measure</small></span>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 40px;">Task Board Workflow</h3>
+        <div class="flow-container" style="padding: 24px 32px;">
+          <div class="flow-steps">
+            <div class="flow-step">
+              <span style="font-weight: 600;">BACKLOG</span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step">
+              <span style="font-weight: 600;">TODO</span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step" style="border-color: var(--accent-border); background: var(--accent-dim);">
+              <span style="font-weight: 600; color: var(--accent);">IN PROGRESS</span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step">
+              <span style="font-weight: 600;">REVIEW</span>
+            </div>
+            <span class="flow-arrow">&rarr;</span>
+            <div class="flow-step">
+              <span style="font-weight: 600;">DONE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- File Structure -->
+      <section class="section" id="file-structure">
+        <div class="section-header">
+          <h2>File Structure</h2>
+          <p>The complete directory layout powering the agency &mdash; agent configs, commands, memory, and marketing assets.</p>
+        </div>
+
+        <div class="code-block">
+          <div class="code-block-header">
+            <span class="code-block-title">Project Root</span>
+          </div>
+          <pre>
+<span class="dir">agency/</span>
+  <span class="dir">agents/</span>
+    tunde.md              <span class="comment"># Content Writer identity &amp; config</span>
+    amara.md              <span class="comment"># Social Media Manager</span>
+    chidi.md              <span class="comment"># SEO Specialist</span>
+    kemi.md               <span class="comment"># Growth Strategist</span>
+    dayo.md               <span class="comment"># Creative Director</span>
+    ife.md                <span class="comment"># Research Analyst</span>
+  <span class="dir">memory/</span>
+    tunde-memory.md       <span class="comment"># Persistent session memory</span>
+    amara-memory.md
+    chidi-memory.md
+    kemi-memory.md
+    dayo-memory.md
+    ife-memory.md
+  <span class="dir">tasks/</span>
+    task-board.md          <span class="comment"># Kanban-style task board</span>
+    backlog.md
+  <span class="dir">docs/</span>
+    index.html             <span class="comment"># This documentation page</span>
+    style.css
+
+<span class="dir">.claude/</span>
+  <span class="dir">commands/</span>
+    heartbeat.md           <span class="comment"># /heartbeat command</span>
+    board.md               <span class="comment"># /board command</span>
+    assign.md              <span class="comment"># /assign command</span>
+    standup.md             <span class="comment"># /standup command</span>
+    sprint.md              <span class="comment"># /sprint command</span>
+    activate.md            <span class="comment"># /activate command</span>
+    agency-status.md       <span class="comment"># /agency-status command</span>
+    process-video.md       <span class="comment"># /process-video command</span>
+    save-strategy.md       <span class="comment"># /save-strategy command</span>
+    list-strategies.md     <span class="comment"># /list-strategies command</span>
+    mottars-status.md      <span class="comment"># /mottars-status command</span>
+  product-marketing-context.md  <span class="comment"># Brand positioning doc</span>
+
+<span class="dir">marketing/</span>
+  <span class="dir">transcripts/</span>
+    <span class="dir">youtube/</span>             <span class="comment"># Extracted YouTube transcripts</span>
+    <span class="dir">instagram/</span>           <span class="comment"># Instagram content transcripts</span>
+    <span class="dir">other/</span>               <span class="comment"># Other platform transcripts</span>
+  <span class="dir">strategies/</span>
+    <span class="dir">content/</span>             <span class="comment"># Content marketing strategies</span>
+    <span class="dir">growth/</span>              <span class="comment"># Growth hacking strategies</span>
+    <span class="dir">social/</span>              <span class="comment"># Social media strategies</span>
+    <span class="dir">seo/</span>                 <span class="comment"># SEO strategies</span>
+    <span class="dir">paid/</span>                <span class="comment"># Paid advertising strategies</span>
+    <span class="dir">general/</span>             <span class="comment"># General marketing strategies</span>
+  <span class="dir">campaigns/</span>             <span class="comment"># Campaign plans &amp; assets</span>
+  <span class="dir">assets/</span>                <span class="comment"># Images, copy, brand assets</span>
+  <span class="dir">research/</span>              <span class="comment"># Market research &amp; audits</span></pre>
+        </div>
+      </section>
+
+      <!-- Free Tools -->
+      <section class="section" id="tools">
+        <div class="section-header">
+          <h2>Free Tools &amp; Integrations</h2>
+          <p>Zero-cost tool stack powering the agency. No paid subscriptions required.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="card-icon">&#128197;</div>
+            <h4>Buffer</h4>
+            <p>Social media scheduling and publishing across Instagram, X (Twitter), Facebook, and LinkedIn. Free tier covers core needs.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#9993;</div>
+            <h4>Brevo (Sendinblue)</h4>
+            <p>Email marketing and automation. Nurture sequences, transactional emails, and subscriber management on the free plan.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#128270;</div>
+            <h4>Google Search Console</h4>
+            <p>Search performance monitoring, index coverage, sitemap management. The source of truth for organic visibility.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#128200;</div>
+            <h4>Google Analytics 4</h4>
+            <p>Traffic analytics, user behavior, conversion tracking. Measures what matters across all marketing channels.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#127912;</div>
+            <h4>Canva</h4>
+            <p>Design platform for social graphics, ad creatives, presentations, and brand assets. Dayo's primary workspace.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#127909;</div>
+            <h4>yt-dlp</h4>
+            <p>Universal video downloader and transcript extractor. Supports 1000+ sites including YouTube, Instagram, and TikTok.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#128221;</div>
+            <h4>youtube-transcript-api</h4>
+            <p>Fast Python-based YouTube transcript extraction. Direct API access without downloading the video file.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#127899;</div>
+            <h4>ffmpeg</h4>
+            <p>Audio and video processing toolkit. Handles format conversion, audio extraction, and media manipulation when needed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Current Campaign -->
+      <section class="section" id="campaign">
+        <div class="section-header">
+          <h2>Current Campaign</h2>
+          <p>The active marketing campaign and its goals, metrics, and progress.</p>
+        </div>
+
+        <div class="campaign-banner">
+          <h3>Trust &amp; Awareness Campaign</h3>
+          <div class="campaign-phase">Phase 1 &mdash; Month 1 (March 2026)</div>
+          <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">
+            Establish Mottars as a credible, trustworthy automotive marketplace in the Nigerian market.
+            Build organic search presence, social proof, and content authority from the ground up.
+          </p>
+
+          <div class="agent-section-label">Campaign Goals</div>
+          <ul class="campaign-goals">
+            <li>Build foundational SEO presence</li>
+            <li>Publish 12+ high-quality blog posts</li>
+            <li>Launch social media channels</li>
+            <li>Establish email subscriber pipeline</li>
+            <li>Create buyer and seller trust content</li>
+            <li>Achieve 50+ organic keywords indexed</li>
+            <li>Build local business citations</li>
+            <li>Develop brand voice and visual identity</li>
+          </ul>
+
+          <div class="agent-section-label" style="margin-top: 24px;">SEO Baseline Score</div>
+          <div class="seo-score">
+            <div>
+              <div class="seo-score-value">38</div>
+              <div class="seo-score-label">out of 100</div>
+            </div>
+            <div>
+              <div class="seo-score-bar">
+                <div class="seo-score-fill"></div>
+              </div>
+              <div class="seo-score-label" style="margin-top: 4px;">Baseline &mdash; March 2026</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer style="border-top: 1px solid var(--border-primary); padding-top: 32px; margin-top: 32px;">
+        <p style="font-size: 13px; color: var(--text-muted);">
+          Mottars Marketing Agency &mdash; Built on Claude Code &mdash; Last updated March 2026
+        </p>
+        <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+          mottars.com &mdash; Nigeria's trusted automotive marketplace
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Inline JS for navigation (no external deps) -->
+  <script>
+    (function () {
+      const hamburger = document.getElementById('hamburger');
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('overlay');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      // Toggle mobile menu
+      function toggleMenu() {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('open');
+      }
+
+      hamburger.addEventListener('click', toggleMenu);
+      overlay.addEventListener('click', toggleMenu);
+
+      // Close menu on nav link click (mobile)
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (window.innerWidth <= 768) {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('open');
+          }
+        });
+      });
+
+      // Active nav link on scroll
+      function updateActiveLink() {
+        const sections = document.querySelectorAll('.section, .hero');
+        let current = '';
+
+        sections.forEach(function (section) {
+          var rect = section.getBoundingClientRect();
+          if (rect.top <= 100) {
+            current = section.getAttribute('id') || '';
+          }
+        });
+
+        navLinks.forEach(function (link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    })();
+  </script>
+
+</body>
+</html>
