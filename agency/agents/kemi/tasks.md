@@ -1,6 +1,24 @@
 # Task Queue: Kemi (Growth and Outreach Manager)
 
-## Current Sprint: Sprint 1 (Week 1-2 | 2026-03-06 to 2026-03-17)
+## Sprint 0.5: Pre-Launch Readiness (2026-03-07 to 2026-03-12) — PARALLEL
+Campaign: Trust & Awareness (Month 1)
+
+### In Progress
+(none)
+
+### Queued
+
+- [ ] **TASK-K-004**: Draft "launching soon" teaser + early subscriber capture mechanism
+  - Brief: Create a "launching soon" teaser campaign. Include: teaser copy for social media (3 variations — curiosity, value, urgency), a simple email capture mechanism plan (Google Form, Brevo landing page, or website popup — whatever is free and fastest), suggested placement on mottars.com, incentive for early subscribers (e.g., "Be first to know when new cars drop" or "Get our free Tokunbo Buyer's Guide"). The goal is to start building an email list before the full content engine kicks in.
+  - Priority: Medium
+  - Deadline: 2026-03-10
+  - Dependencies: none
+  - Output: marketing/campaigns/trust-awareness-m1/email/launching-soon-teaser.md
+  - Status: ASSIGNED
+
+---
+
+## Sprint 1: Foundation & Emergency SEO (2026-03-06 to 2026-03-17) — PARALLEL
 Campaign: Trust & Awareness (Month 1)
 
 ### In Progress

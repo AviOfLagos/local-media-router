@@ -1,6 +1,24 @@
 # Task Queue: Amara (Social Media Manager)
 
-## Current Sprint: Sprint 1 (Week 1-2 | 2026-03-06 to 2026-03-17)
+## Sprint 0.5: Pre-Launch Readiness (2026-03-07 to 2026-03-12) — PARALLEL
+Campaign: Trust & Awareness (Month 1)
+
+### In Progress
+(none)
+
+### Queued
+
+- [ ] **TASK-A-005**: Set up/audit Mottars Instagram, Twitter/X, TikTok accounts — ensure professional look
+  - Brief: Once Dayo delivers social brand assets (D-004), set up or audit all three social accounts. Ensure: profile pictures match brand kit, bios are consistent across platforms, links point to mottars.com, contact info is correct, highlight covers are uploaded (IG), pinned tweet/post is set (Twitter/X). If accounts don't exist, document exact setup steps for CEO. If they exist, audit and list what needs fixing.
+  - Priority: High
+  - Deadline: 2026-03-11
+  - Dependencies: TASK-D-004 (Dayo)
+  - Output: marketing/campaigns/trust-awareness-m1/content/social/social-account-audit.md
+  - Status: ASSIGNED
+
+---
+
+## Sprint 1: Foundation & Emergency SEO (2026-03-06 to 2026-03-17) — PARALLEL
 Campaign: Trust & Awareness (Month 1)
 
 ### In Progress

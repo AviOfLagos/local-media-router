@@ -1,6 +1,32 @@
 # Task Queue: Femi (Technical Lead — Dev Handoff)
 
-## Current Sprint: Sprint 1 (Week 1-2 | 2026-03-06 to 2026-03-17)
+## Sprint 0.5: Pre-Launch Readiness (2026-03-07 to 2026-03-12) — PARALLEL
+Campaign: Trust & Awareness (Month 1)
+
+### In Progress
+(none)
+
+### Queued
+
+- [ ] **TASK-F-003**: Audit mottars.com live site for launch-readiness
+  - Brief: Comprehensive audit of the live site. Check for: broken links, test/placeholder data (Lorem ipsum listings), wrong phone numbers, outdated copyright year, missing or broken OG images, placeholder content on any page, test user accounts visible, incorrect contact info. Document every issue found with screenshot descriptions and exact URLs.
+  - Priority: Critical
+  - Deadline: 2026-03-07
+  - Dependencies: none
+  - Output: marketing/campaigns/trust-awareness-m1/dev/site-audit-report.md
+  - Status: ASSIGNED
+
+- [ ] **TASK-F-004**: Create dev ticket bundle from site audit findings
+  - Brief: Take all issues from F-003 audit and convert into individual dev tickets. Each ticket: remove test listings, fix phone number, update copyright to 2026, fix OG image, remove placeholder content. Each gets severity (P0-P3), effort estimate (S/M/L), acceptance criteria, and before/after description.
+  - Priority: Critical
+  - Deadline: 2026-03-09
+  - Dependencies: TASK-F-003
+  - Output: marketing/campaigns/trust-awareness-m1/dev/pre-launch-ticket-bundle.md
+  - Status: ASSIGNED
+
+---
+
+## Sprint 1: Foundation & Emergency SEO (2026-03-06 to 2026-03-17) — PARALLEL
 Campaign: Trust & Awareness (Month 1)
 
 ### In Progress

@@ -1,16 +1,16 @@
 # Agency Roster
 
-*Last updated: 2026-03-06*
+*Last updated: 2026-03-07*
 
-| Agent | Code | Role | Status | Current Task | Sprint Tasks | Completed |
-|-------|------|------|--------|-------------|-------------|-----------|
-| Tunde | tunde | Content Writer | WAITING | Awaiting briefs | 0/2 | 0 |
-| Amara | amara | Social Media Manager | READY | A-001, A-004 | 0/4 | 0 |
-| Chidi | chidi | SEO Specialist | READY | C-001, C-002 (unblocked) | 0/4 | 0 |
-| Kemi | kemi | Growth/Outreach | READY | K-001 | 0/3 | 0 |
-| Dayo | dayo | Creative Strategist + Design | READY | D-001 (unblocked) | 0/3 | 0 |
-| Ife | ife | Analytics/Research | ACTIVE | I-002, I-003 next | 1/3 | 1 |
-| Femi | femi | Technical Lead (Dev Handoff) | READY | F-001 (awaiting Chidi) | 0/2 | 0 |
+| Agent | Code | Role | Status | Current Task | Sprint 0.5 | Sprint 1 | Completed |
+|-------|------|------|--------|-------------|-----------|----------|-----------|
+| Tunde | tunde | Content Writer | READY | T-003 (About/Contact copy) | 0/1 | 0/2 | 0 |
+| Amara | amara | Social Media Manager | READY | A-001, A-004 (unblocked) | 0/1 | 0/4 | 0 |
+| Chidi | chidi | SEO Specialist | READY | C-005 (GSC), C-001, C-002 | 0/1 | 0/4 | 0 |
+| Kemi | kemi | Growth/Outreach | READY | K-004 (teaser), K-001 | 0/1 | 0/3 | 0 |
+| Dayo | dayo | Creative Strategist + Design | READY | D-004 (social assets), D-001 | 0/1 | 0/3 | 0 |
+| Ife | ife | Analytics/Research | ACTIVE | I-002, I-003 next | 0/0 | 1/3 | 1 |
+| Femi | femi | Technical Lead (Dev Handoff) | READY | F-003 (site audit) | 0/2 | 0/2 | 0 |
 
 ## Agent Activation Sequence
 

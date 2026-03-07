@@ -1,6 +1,24 @@
 # Task Queue: Chidi (SEO Specialist)
 
-## Current Sprint: Sprint 1 (Week 1-2 | 2026-03-06 to 2026-03-17)
+## Sprint 0.5: Pre-Launch Readiness (2026-03-07 to 2026-03-12) — PARALLEL
+Campaign: Trust & Awareness (Month 1)
+
+### In Progress
+(none)
+
+### Queued
+
+- [ ] **TASK-C-005**: Submit corrected sitemap to Google Search Console + verify domain
+  - Brief: Ensure mottars.com is verified in Google Search Console. Submit the corrected sitemap (mottars.com domain, not mottars.ng). Verify domain ownership if not already done. Check for any manual actions or security issues. Document the submission status and any errors returned by GSC. Provide step-by-step instructions for CEO to execute in browser.
+  - Priority: Critical
+  - Deadline: 2026-03-07
+  - Dependencies: none
+  - Output: marketing/campaigns/trust-awareness-m1/seo/gsc-setup-guide.md
+  - Status: ASSIGNED
+
+---
+
+## Sprint 1: Foundation & Emergency SEO (2026-03-06 to 2026-03-17) — PARALLEL
 Campaign: Trust & Awareness (Month 1)
 
 ### In Progress

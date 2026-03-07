@@ -1,6 +1,24 @@
-# Task Queue: Dayo (Creative Strategist)
+# Task Queue: Dayo (Creative Strategist + Design Lead)
 
-## Current Sprint: Sprint 1 (Week 1-2 | 2026-03-06 to 2026-03-17)
+## Sprint 0.5: Pre-Launch Readiness (2026-03-07 to 2026-03-12) — PARALLEL
+Campaign: Trust & Awareness (Month 1)
+
+### In Progress
+(none)
+
+### Queued
+
+- [ ] **TASK-D-004**: Design social media profile assets (IG profile pic, bio, cover, highlight covers)
+  - Brief: Create a cohesive social media brand kit for Mottars. Include: Instagram profile picture (logo on green or white background, 320x320), suggested bio text, 5 highlight cover icons (Listings, Reviews, Tips, About, Contact), Twitter/X header image (1500x500), TikTok profile pic. All following brand-style.md color palette and typography. Provide as design specs + AI image prompts with brand constraints injected.
+  - Priority: High
+  - Deadline: 2026-03-09
+  - Dependencies: none
+  - Output: marketing/campaigns/trust-awareness-m1/creative/social-brand-kit.md
+  - Status: ASSIGNED
+
+---
+
+## Sprint 1: Foundation & Emergency SEO (2026-03-06 to 2026-03-17) — PARALLEL
 Campaign: Trust & Awareness (Month 1)
 
 ### In Progress
