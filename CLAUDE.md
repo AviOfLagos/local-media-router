@@ -19,7 +19,7 @@ Always read `.claude/product-marketing-context.md` first — it contains positio
 
 ## Virtual Marketing Agency
 
-This workspace runs a **persistent multi-agent marketing agency** with 6 specialized agents, a task board, and a heartbeat sync system.
+This workspace runs a **persistent multi-agent marketing agency** with 7 specialized agents, a task board, and a heartbeat sync system.
 
 ### Quick Commands
 
@@ -41,8 +41,9 @@ This workspace runs a **persistent multi-agent marketing agency** with 6 special
 | **Amara** | `amara` | Social Media Manager | `/activate amara` |
 | **Chidi** | `chidi` | SEO Specialist | `/activate chidi` |
 | **Kemi** | `kemi` | Growth/Outreach | `/activate kemi` |
-| **Dayo** | `dayo` | Creative Strategist | `/activate dayo` |
+| **Dayo** | `dayo` | Creative Strategist + Design | `/activate dayo` |
 | **Ife** | `ife` | Analytics/Research | `/activate ife` |
+| **Femi** | `femi` | Technical Lead (Dev Handoff) | `/activate femi` |
 
 **CMO** = Claude (main session) — orchestrates agents, reviews work, plans sprints
 
@@ -53,6 +54,7 @@ Ife researches -> Dayo creates concept -> Tunde writes blog -> Chidi SEO-optimiz
 
 ### Key Files
 - **Brand voice**: `agency/shared/brand-voice.md` — THE source of truth for writing tone
+- **Brand style**: `agency/shared/brand-style.md` — Visual identity (colors, fonts, photography, AI prompts)
 - **Task board**: `agency/shared/campaign-board.md` — master sprint/task tracker
 - **Goals**: `agency/shared/goals.md` — monthly targets and KPIs
 - **Roster**: `agency/shared/roster.md` — agent status at a glance
@@ -114,13 +116,16 @@ memory/long-term.md  — Learnings, patterns, history
 ```
 agency/                   # Virtual marketing agency system
 ├── shared/               # Shared config (brand voice, goals, roster, protocols)
-├── agents/               # 6 agent profiles (identity, memory, tasks, heartbeat)
+├── agents/               # 7 agent profiles (identity, memory, tasks, heartbeat)
 │   ├── tunde/            # Content Writer
 │   ├── amara/            # Social Media Manager
 │   ├── chidi/            # SEO Specialist
 │   ├── kemi/             # Growth/Outreach
-│   ├── dayo/             # Creative Strategist
-│   └── ife/              # Analytics/Research
+│   ├── dayo/             # Creative Strategist + Design Lead
+│   ├── ife/              # Analytics/Research
+│   └── femi/             # Technical Lead (Dev Handoff)
+├── standup/              # Daily standup records (YYYY-MM-DD.md)
+├── briefs/               # Project briefs (discord-bot-brief.md, etc.)
 └── docs/                 # HTML documentation (index.html + style.css)
 
 marketing/
@@ -143,6 +148,7 @@ marketing/
 │       ├── email/
 │       ├── creative/
 │       ├── seo/
+│       ├── dev/
 │       └── reports/
 ├── assets/               # Marketing assets (images, copy, etc.)
 └── research/             # Market research and competitive analysis
