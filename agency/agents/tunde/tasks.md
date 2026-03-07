@@ -7,14 +7,18 @@ Campaign: Trust & Awareness (Month 1)
 (none)
 
 ### Queued
+(none)
 
-- [ ] **TASK-T-003**: Write About page copy + Contact page copy for mottars.com
+### Done (This Sprint)
+
+- [x] **TASK-T-003**: Write About page copy + Contact page copy for mottars.com
   - Brief: Write compelling About page and Contact page copy for mottars.com. About page: tell the Mottars story — why it exists (Nigerian car buying is broken), what it does differently (verified dealers, vehicle history, split payments), the vision (every Nigerian deserves a trustworthy car buying experience). Keep it human, warm, Nigerian. Contact page: professional but approachable, include email, phone, and Lagos office address. Both pages should reflect brand voice — confident, not corporate.
   - Priority: High
   - Deadline: 2026-03-09
   - Dependencies: none
   - Output: marketing/campaigns/trust-awareness-m1/content/about-contact-copy.md
-  - Status: ASSIGNED
+  - Status: DONE
+  - Completed: 2026-03-07
 
 ---
 

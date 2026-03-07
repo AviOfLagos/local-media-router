@@ -7,14 +7,18 @@ Campaign: Trust & Awareness (Month 1)
 (none)
 
 ### Queued
+(none)
 
-- [ ] **TASK-D-004**: Design social media profile assets (IG profile pic, bio, cover, highlight covers)
+### Done (Sprint 0.5)
+
+- [x] **TASK-D-004**: Design social media profile assets (IG profile pic, bio, cover, highlight covers)
   - Brief: Create a cohesive social media brand kit for Mottars. Include: Instagram profile picture (logo on green or white background, 320x320), suggested bio text, 5 highlight cover icons (Listings, Reviews, Tips, About, Contact), Twitter/X header image (1500x500), TikTok profile pic. All following brand-style.md color palette and typography. Provide as design specs + AI image prompts with brand constraints injected.
   - Priority: High
   - Deadline: 2026-03-09
   - Dependencies: none
   - Output: marketing/campaigns/trust-awareness-m1/creative/social-brand-kit.md
-  - Status: ASSIGNED
+  - Status: DONE
+  - Completed: 2026-03-07
 
 ---
 
@@ -25,14 +29,6 @@ Campaign: Trust & Awareness (Month 1)
 (none)
 
 ### Queued
-
-- [ ] **TASK-D-001**: Develop campaign creative concept for Trust & Awareness Month 1
-  - Brief: Create the overarching creative concept that ties together all content for Month 1. Define: campaign tagline/slogan, visual identity direction (colors, mood, imagery style), key messaging pillars (3-4 core messages), tone guidelines specific to this campaign, content angle (how we frame trust — not by attacking competitors but by showing what we do differently). This concept guides Tunde's writing, Amara's social, and Kemi's outreach.
-  - Priority: Critical
-  - Deadline: 2026-03-07
-  - Dependencies: none
-  - Output: marketing/campaigns/trust-awareness-m1/creative/campaign-concept.md
-  - Status: ASSIGNED
 
 - [ ] **TASK-D-002**: Write content brief + headline options for blog #1: "9 Lies Car Dealers Tell"
   - Brief: Create detailed content brief for Tunde. Include: 5 headline variations (test different angles — fear, curiosity, empowerment), article structure (intro hook, each lie as a section, Mottars solution, CTA), emotional arc (anger at being lied to → empowerment through knowledge → trust in Mottars), key psychological triggers to use (loss aversion, social proof, authority), content differentiation (what makes this better than generic "car scam" articles).
@@ -50,5 +46,13 @@ Campaign: Trust & Awareness (Month 1)
   - Output: marketing/campaigns/trust-awareness-m1/creative/brief-tokunbo-checklist.md
   - Status: ASSIGNED
 
-### Done (This Sprint)
-(none)
+### Done (Sprint 1)
+
+- [x] **TASK-D-001**: Develop campaign creative concept for Trust & Awareness Month 1
+  - Brief: Create the overarching creative concept that ties together all content for Month 1. Define: campaign tagline/slogan, visual identity direction (colors, mood, imagery style), key messaging pillars (3-4 core messages), tone guidelines specific to this campaign, content angle (how we frame trust — not by attacking competitors but by showing what we do differently). This concept guides Tunde's writing, Amara's social, and Kemi's outreach.
+  - Priority: Critical
+  - Deadline: 2026-03-07
+  - Dependencies: none
+  - Output: marketing/campaigns/trust-awareness-m1/creative/campaign-concept.md
+  - Status: DONE
+  - Completed: 2026-03-07

@@ -7,14 +7,19 @@ Campaign: Trust & Awareness (Month 1)
 (none)
 
 ### Queued
+(none)
 
-- [ ] **TASK-C-005**: Submit corrected sitemap to Google Search Console + verify domain
+### Done (Sprint 0.5)
+
+- [x] **TASK-C-005**: Submit corrected sitemap to Google Search Console + verify domain
   - Brief: Ensure mottars.com is verified in Google Search Console. Submit the corrected sitemap (mottars.com domain, not mottars.ng). Verify domain ownership if not already done. Check for any manual actions or security issues. Document the submission status and any errors returned by GSC. Provide step-by-step instructions for CEO to execute in browser.
   - Priority: Critical
   - Deadline: 2026-03-07
   - Dependencies: none
   - Output: marketing/campaigns/trust-awareness-m1/seo/gsc-setup-guide.md
-  - Status: ASSIGNED
+  - Status: DONE
+  - Completed: 2026-03-07
+  - Notes: Comprehensive 9-step guide covering all GSC verification methods (DNS TXT, HTML file, meta tag, GA, GTM), sitemap submission, manual action checks, email notifications, robots.txt verification, and indexing status checks. Includes troubleshooting section and success checklist.
 
 ---
 
@@ -25,14 +30,6 @@ Campaign: Trust & Awareness (Month 1)
 (none)
 
 ### Queued
-
-- [ ] **TASK-C-001**: Fix sitemap domain (mottars.ng → mottars.com) — prepare corrected XML
-  - Brief: The current sitemap uses mottars.ng domain for all 94 URLs — Google rejects everything. Corrected sitemap already generated at marketing/research/mottars-corrected-sitemap.xml. Prepare implementation brief for dev team: where to update sitemap generation config (likely next-sitemap or Next.js config), XML encoding fixes (& → &amp;), add 9 blog URLs, remove /login and /register. Include before/after comparison.
-  - Priority: Critical
-  - Deadline: 2026-03-07
-  - Dependencies: none
-  - Output: marketing/campaigns/trust-awareness-m1/seo/sitemap-fix-brief.md
-  - Status: ASSIGNED
 
 - [ ] **TASK-C-002**: Prepare SEO fix brief for dev team (redirects, canonical, noindex)
   - Brief: Compile all Week 1 emergency SEO fixes from ACTION-PLAN.md into a developer-ready brief. Cover: 307→301 redirect change, canonical domain resolution (www vs non-www), noindex on /login and /register, test listing cleanup (5 Lorem ipsum listings), placeholder phone number fix in Organization schema. Include exact code snippets or config changes where possible.
@@ -58,8 +55,17 @@ Campaign: Trust & Awareness (Month 1)
   - Output: marketing/campaigns/trust-awareness-m1/seo/seo-brief-tokunbo-checklist.md
   - Status: ASSIGNED
 
-### Done (This Sprint)
-(none)
+### Done (Sprint 1)
+
+- [x] **TASK-C-001**: Fix sitemap domain (mottars.ng → mottars.com) — prepare corrected XML
+  - Brief: The current sitemap uses mottars.ng domain for all 94 URLs — Google rejects everything. Corrected sitemap already generated at marketing/research/mottars-corrected-sitemap.xml. Prepare implementation brief for dev team: where to update sitemap generation config (likely next-sitemap or Next.js config), XML encoding fixes (& → &amp;), add 9 blog URLs, remove /login and /register. Include before/after comparison.
+  - Priority: Critical
+  - Deadline: 2026-03-07
+  - Dependencies: none
+  - Output: marketing/campaigns/trust-awareness-m1/seo/sitemap-fix-brief.md
+  - Status: DONE
+  - Completed: 2026-03-07
+  - Notes: Developer-ready implementation brief covering root cause analysis (env variable / next-sitemap config), step-by-step fix instructions with before/after code examples, URL add/remove lists, XML encoding fix patterns, local and post-deployment validation checklists, and GSC submission steps.
 
 ## Standing Reference
 - Current SEO audit score: 38/100 (baseline from 2026-03-05 audit)
